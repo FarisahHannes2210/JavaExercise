@@ -1,0 +1,34 @@
+package ExerciseHierarchical;
+
+/// Create a hierarchy of shapes: Shape, Circle, Rectangle, and Triangle. The Shape class should be abstract
+/// and define abstract methods for calculating area and perimeter. The Circle, Rectangle,
+/// and Triangle classes should inherit from Shape and provide concrete implementations
+/// for these methods and store the area and perimeter in two ArrayLists
+///
+/// Implement a validateInput() method in each shape class to ensure that the input
+/// parameters are valid (e.g., radius for Circle, length and width for Rectangle, etc.).
+/// Throw a custom InvalidShapeException if the input is invalid.
+/// If dealing with nullable values, use null checks to prevent NullPointerExceptions
+/// Implement logging to record errors and track application
+/// Test the classes with various input values, including valid and invalid ones.
+
+abstract class Shape {
+    double area;
+    double parameter;
+
+    public Shape(double area, double parameter) {
+        this.area = area;
+        this.parameter = parameter;
+
+    }
+
+    public double getArea() {
+        return area;
+    }
+
+    public double getParameter() {
+        return parameter;
+
+    }
+
+}
